@@ -6,7 +6,7 @@
 > *Please fill in the ticket or issue number.*
 > > Example:
 > >
-> > #3
+> > #1
 
 ## What's changed
 
@@ -14,11 +14,13 @@
 > *Please explain what changes this pull request will make.*
 > > Example:
 > >
-> > * Added functionality to perform 'bar' on 'foo'.
+> > - Added functionality to perform 'bar' on 'foo'.
 
 ## Check List
 
 - [ ] Assign labels
+- [ ] Assign reviewers
+- [ ] Assign assignees
 - [ ] Add appropriate test cases
 
 ## Remark

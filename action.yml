@@ -1,7 +1,7 @@
-name: github-actions-paths-ignore-alternative
+name: github-actions-paths-filter-alternative
 # MEMO: Description must be less than 125 characters.
-description: 'A workaround workflow to resolve the incompatibility of `Require status checks to pass` setting when `paths-ignore` is set.'
-author: 'kunitsucom'
+description: 'A workaround workflow to resolve the incompatibility of `Require status checks to pass` setting when `paths` filter is set.'
+author: 'hakadoriya'
 
 branding:
   icon: search
@@ -53,7 +53,7 @@ inputs:
 
 outputs:
   skip:
-    value: ${{ steps.paths-ignore.outputs.skip }}
+    value: ${{ steps.paths-filter.outputs.skip }}
     description: "If no diff, this value is 'true'. Otherwise, this value is 'false'."
 
 runs:
@@ -63,13 +63,13 @@ runs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: github-actions-paths-ignore-alternative
-      id: paths-ignore
+    - name: github-actions-paths-filter-alternative
+      id: paths-filter
       shell: 'bash'
       env:
         LOGSH_COLOR: 'true'
       run: |
-        # LICENSE: https://github.com/kunitsucom/log.sh/blob/HEAD/LICENSE
+        # LICENSE: https://github.com/hakadoriya/log.sh/blob/HEAD/LICENSE
         # Common
         if [ "${LOGSH_COLOR:-}" ] || [ -t 2 ] ; then LOGSH_COLOR=true; else LOGSH_COLOR=''; fi
         _logshRFC3339() { date "+%Y-%m-%dT%H:%M:%S%z" | sed "s/\(..\)$/:\1/"; }
