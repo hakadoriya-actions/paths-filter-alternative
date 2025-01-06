@@ -8,11 +8,8 @@ A workaround workflow to resolve the incompatibility of the `Require status chec
 name: example
 
 on:
-  push:
-    # NO paths filter
   pull_request:
     # NO paths filter
-  workflow_dispatch:
 
 jobs:
   paths-filter:
@@ -54,11 +51,8 @@ jobs:
 name: example
 
 on:
-  push:
-    # NO paths-ignore
   pull_request:
-    # NO paths-ignore
-  workflow_dispatch:
+    # NO paths-ignore filter
 
 jobs:
   paths-filter:
