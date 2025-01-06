@@ -1,11 +1,8 @@
 name: example
 
 on:
-  push:
-    # NO paths filter
   pull_request:
     # NO paths filter
-  workflow_dispatch:
 
 jobs:
   paths-filter:
