@@ -18,9 +18,9 @@
 
 ## Check List
 
-- [ ] Assign labels
 - [ ] Assign reviewers
 - [ ] Assign assignees
+- [ ] Assign labels
 - [ ] Add appropriate test cases
 
 ## Remark
