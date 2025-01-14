@@ -17,7 +17,7 @@ jobs:
     outputs:
       skip: ${{ steps.paths-filter.outputs.skip }}
     steps:
-      - uses: hakadoriya/github-actions-paths-filter-alternative@main
+      - uses: hakadoriya-actions/paths-filter-alternative@main
         id: paths-filter
         with:
           paths: |-
@@ -60,7 +60,7 @@ jobs:
     outputs:
       skip: ${{ steps.paths-filter.outputs.skip }}
     steps:
-      - uses: hakadoriya/github-actions-paths-filter-alternative@main
+      - uses: hakadoriya-actions/paths-filter-alternative@main
         id: paths-filter
         with:
           paths-ignore: |-

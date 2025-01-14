@@ -1,4 +1,4 @@
-name: github-actions-paths-filter-alternative
+name: hakadoriya-actions-paths-filter-alternative
 # MEMO: Description must be less than 125 characters.
 description: 'A workaround workflow to resolve the incompatibility of `Require status checks to pass` setting when `paths` filter is set.'
 author: 'hakadoriya'
@@ -63,7 +63,7 @@ runs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: github-actions-paths-filter-alternative
+    - name: paths-filter-alternative
       id: paths-filter
       shell: 'bash'
       env:
