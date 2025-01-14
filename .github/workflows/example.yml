@@ -10,7 +10,7 @@ jobs:
     outputs:
       skip: ${{ steps.paths-filter.outputs.skip }}
     steps:
-      - uses: hakadoriya/github-actions-paths-filter-alternative@develop
+      - uses: hakadoriya-actions/paths-filter-alternative@develop
         id: paths-filter
         with:
           paths: |-
